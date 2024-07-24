@@ -1,176 +1,291 @@
 import * as React from "react"
-
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+import Footer from "../components/Footer"
+import image1 from "../asset/logoskl.png"
+import gratisOngkir from "../asset/gedung.jpg"
+import muatan from "../asset/olahraga.jpg"
+import cod from "../asset/obeng.jpg"
+import produk from "../asset/lapanganBasket.png"
+import produk1 from "../asset/kolamRenang.png"
+import produk2 from "../asset/perpustakaan.png"
+import produk3 from "../asset/komputer.png"
+import produk4 from "../asset/ruangMusik.png"
+import produk5 from "../asset/aula.png"
+import produk6 from "../asset/taman.png"
+import produk7 from "../asset/labolatorium.png"
+import prestasi1 from "../asset/prestasi1.png"
+import prestasi2 from "../asset/prestasi2.png"
+import prestasi3 from "../asset/prestasi3.png"
+import prestasi4 from "../asset/prestasi4.png"
+import prestasi5 from "../asset/prestasi5.png"
+import prestasi6 from "../asset/prestasi6.png"
+import customer1 from "../asset/cs1.png"
+import customer2 from "../asset/cs2.png"
+import customer3 from "../asset/cs3.png"
+import customer4 from "../asset/cs4.png"
+// import Header from "../components/Header"
 
 const IndexPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
+  // const initSlider = () => {
+
+
+    
+  //   const imageList = document.querySelector(".slider-wrapper .image-list")
+  //   const slideButtons = document.querySelectorAll(".slider-wrapper .slider-button")
+  
+  // slideButtons.forEach(button => {
+  // button.addEventListener("click", () => {
+  //   const direction = button.id === "prev-slide" ? -1 : 1;
+  //   const scrollAmount = imageList.clientWidth * direction;
+  //   imageList.scrollBy({ left: scrollAmount, behavior: "smooth" })
+  // });
+  // });
+  // }
+  
+  // window.addEventListener("load", initSlider);
+    return (
+   
+    // Section home
+    <div>
+      <section className="home w-screen h-screen">
+        <div className=" header absolute w-full flex justify-between items-center ">
+          <a href="#" className="logoNavbar">
+            <img src={(image1)} className="logo w-28 h-28 absolute "></img>
           </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
+          <div></div>
+          <nav className="navbar">
+            <ul className="relative text-white mt-5">
+              <li className="list"><a href="/">Home</a></li>
+              <li className="list"><a href="/about">Tentang Kami</a></li>
+              {/* <li className="list"><a href="/">Produk ▾</a>
+               <ul className="">
+                <li className="produk"><a href="/batu">Batu</a></li>
+                <li className="produk"><a href="/pasir">Pasir</a></li>
+               </ul>
+              </li> */}
+              <li className="list"><a href="/kontak">Kontak</a></li>
+              <li className="list"><a href="/blog">Blog</a></li>
+             
+                <button>
+                  <li><a className="galery" href="/galery">History</a></li>
+                </button>
+             
+            </ul>
+
+          </nav>
+        </div>
+            <div className="text absolute text-white">
+              <p className=" font-bold text-2xl">SMK GENERASI EMAS NUSANTARA</p>
+              <h1 className="font-bold text-5xl mb-2">Menyambut Generasi Masa Depan dengan</h1>
+              <h1 className="font-bold text-5xl mb-3">Pendidikan Berkualitas dan Berkarakter</h1>
+              <p>Mencetak Generasi Emas</p>
+            </div>
+      
+              <a className="tombol_menu absolute text-white w-40 h-14 justify-center flex items-center" href="https://wa.me/6281388230020">Hubungi Kami<i class='bx bxl-whatsapp'></i></a>
+          
+      
+      </section>
+
+
+      {/* SECTION ALASAN */}
+
+      <section className="alasan-section" id="alasan-section">
+            <div className=" justify-center flex ">
+              <h1 className=" mt-40 text-4xl font-bold">Kenapa Harus Generasi Emas Nusantara ?</h1>
+            </div>
+
+            <div className="card flex justify-center items-center flex-wrap gap-8">
+                <div className="cardBox text-left">
+                  <img src={(gratisOngkir)} className="img-ongkir"></img>
+                  <h1 className="cardText font-bold">Bebas Biaya Gedung</h1>
+                  <p className="mt-6">Sekolah kami dengan bangga mengumumkan bahwa biaya gedung ditiadakan! Ini berarti siswa dapat menikmati fasilitas sekolah yang lengkap tanpa tambahan biaya gedung, sehingga pendidikan berkualitas menjadi lebih terjangkau bagi semua. Mari bergabung dengan kami untuk masa depan yang lebih cerah tanpa beban biaya tambahan...</p>
+                </div>
+                <div className="cardBox text-left">
+                  <img src={(muatan)} className="img-muatan"></img>
+                  <h1 className="cardText font-bold">Banyak Ekstrakulikuler</h1>
+                  <p className="mt-6">Sekolah kami menawarkan beragam ekstrakurikuler untuk mengembangkan minat dan bakat siswa di berbagai bidang. Mulai dari olahraga, seni, musik, sains, hingga klub debat, setiap siswa memiliki kesempatan untuk mengeksplorasi dan mengembangkan potensinya. Dengan banyaknya pilihan ekstrakurikuler, kami memastikan setiap siswa...</p>
+                </div>
+                <div className="cardBox text-left">
+                  <img src={(cod)} className="img-cod"></img>
+                  <h1 className="cardText font-bold">Full Praktek</h1>
+                  <p className="mt-6">Sekolah kami menekankan pentingnya pembelajaran praktis dalam kurikulum. Dengan banyaknya sesi praktek di berbagai mata pelajaran, siswa dapat mengaplikasikan teori yang dipelajari di kelas ke dalam situasi nyata. Melalui laboratorium sains, workshop teknologi, proyek lapangan, dan kegiatan hands-on lainnya, kami memastikan...</p>
+                </div>
+            </div>
+       
+      </section>
+
+      {/* SECTION  PRODUK*/}
+
+    <section className="produk-section">
+      <div className="justify-center items-center text-center">
+        <h1 className="mt-20 mb-10 text-4xl font-bold">Fasilitas kami</h1>
+        <p>Sekolah kami menyediakan fasilitas terbaik untuk mendukung proses belajar mengajar.</p>
+          <p>Dengan ruang kelas yang modern, laboratorium lengkap, perpustakaan dengan koleksi buku yang kaya, area olahraga yang luas, serta teknologi terkini, kami memastikan siswa memiliki lingkungan yang kondusif untuk belajar dan berkembang. </p>
+        <p>Fasilitas-fasilitas ini dirancang untuk memberikan kenyamanan dan kemudahan bagi siswa dalam mengeksplorasi dan mengembangkan potensi mereka secara maksimal.  </p>
+           <p>Bergabunglah dengan kami dan rasakan manfaat dari fasilitas unggulan kami!
+
+
+
+
+
+
+</p>
+      </div>
+
+      <div className="card mt-10 flex justify-center items-center text-center flex-wrap gap-4">
+                <a href="../pasir/pasirCor" className="cardProduk rounded-2xl">
+                  <img src={(produk)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../batu/batuBataMerah" className="cardProduk rounded-2xl">
+                  <img src={(produk1)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../pasir/pasirRangkas" className="cardProduk rounded-2xl">
+                  <img src={(produk2)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../batu/batuSirdam" className="cardProduk rounded-2xl">
+                  <img src={(produk3)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../batu/batuScreening" className="cardProduk rounded-2xl">
+                  <img src={(produk4)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../batu/batuS  k" className="cardProduk rounded-2xl">
+                  <img src={(produk5)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                {/* <a href="../pasir/abuBatu" className="cardProduk rounded-2xl">
+                  <img src={(produk6)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="../pasir/pasirBangka" className="cardProduk rounded-2xl">
+                  <img src={(produk7)} className="img-produk w-full h-full rounded-3xl"></img>
+                </a> */}
+
+
+            </div>
+                {/* <div className=" justify-center items-center flex mt-10 mb-10">
+                  <a href="/batu" className="btn-produk flex justify-center items-center text-center w-40 h-16 rounded-3xl text-white">
+                    EXPLORE MORE
+                  </a>
+              </div> */}
+    </section>
+
+    {/* SECTION CLOSING */}
+
+    <section className="closing"> 
+    <div className="closing-first flex items-center">
+      <div className="img-logo">
+        <img className="w-40 h-40 mt-5 mb-5 ml-28 mr-28 rounded-2xl" src={(image1)} alt="Gambar" />
+      </div>
+      <div className="text-logo mr-52">
+        <h1 className="text-4xl font-bold mb-6">Tentang Kami</h1>
+        <p><b>SMK Generasi Emas Nusantara</b> tempat dimana pendidikan berkualitas dan 
+        pengembangan karakter menjadi prioritas utama kami, demi menghasilkan putra/putri yang hebat di Indonesia. 
+        Kami telah berkomitmen untuk menyediakan lingkungan belajar yang inspiratif dan mendukung bagi setiap siswa maupun siswi.</p>
+      </div>
+    </div>
+    <div className="text-produk justify-center item-center text-center">
+        <h1 className="text-4xl font-bold mt-20 ">Prestasi</h1>
+      </div>
+
+    <div className="body-slide flex items-center justify-center">
+      <div className="container-slide ">
+          <div className="slide-wrapper">
+            {/* <button id="prev-slide" className="slide-button material-symbols-rounded text-4xl">◂</button> */}
+            <div className="image-list grid">
+              <div className="image-item">
+                <img src={(prestasi1)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi2)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi3)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi4)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi5)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi6)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi1)} className="" ></img>
+              </div>
+              <div className="image-item">
+                <img src={(prestasi2)} className="" ></img>
+              </div>
+            </div>
+            {/* <button id="next-slide" className="slide-button material-symbols-rounded text-4xl">▸</button> */}
+
+            {/* <div className="slider-scrollbar h-[24px] w-full flex items-center">
+              <div className="scrollbar-track h-[2px] w-full relative bg-white rounded-md">
+                <div className="scrollbar-thumb h-full w-[50%] absolute bg-white "></div>
+              </div>
+            </div> */}
+          </div>
+      </div>
+      </div>  
+
+      <div className="card-closing mt-[-100px] flex justify-center items-center text-center flex-wrap gap-4">
+                {/* <a href="#" className="cardProduk rounded-2xl">
+                  <img src={(produk)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="#" className="cardProduk rounded-2xl">
+                  <img src={(produk1)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="#" className="cardProduk rounded-2xl">
+                  <img src={(produk2)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a>
+                <a href="#" className="cardProduk rounded-2xl">
+                  <img src={(produk3)} className="img-produk w-full h-full rounded-2xl"></img>
+                </a> */}
+
+        <div className="closing-cta mt-[-150px] mb-52 ml-56 mr-40 justify-center align-center bg-white rounded-2xl">
+          <div className="ml-10 pt-10 text-left">
+          <h1 className="h1-cta font-bold text-3xl mb-5 pb-">Hubungi Kami Segera</h1>
+          <p className="p-cta font-bold">Untuk informasi lebih lanjut.</p>
+          <a href="https://wa.me/6281388230020" className="btn-cta justify-center align-center flex ">
+              whatsapp
+          </a>
+          </div>
+        </div>
+        </div>
+
+        <div className="text-cus justify-center item-center text-center">
+          <h1 className="text-4xl font-bold mt-20 ">Our Patners</h1>
+        </div>
+
+        <div className="closing-customer flex justify-center items-center text-center flex-wrap gap-4">
+          <div className="card-customer">
+             <img src={(customer1)} className="img-customer w-full h-full"></img>
+          </div>
+          <div className="card-customer">
+             <img src={(customer2)} className="img-customer w-full h-full"></img>
+          </div>
+          <div className="card-customer">
+             <img src={(customer3)} className="img-customer w-full h-full"></img>
+          </div>
+          <div className="card-customer">
+             <img src={(customer4)} className="img-customer w-full h-full"></img>
+          </div>
+
+        </div>
+    
+
+
+    </section>
+
+    <Footer/>
+    </div>
+
+    
+
   )
 }
 
+
+ 
+
+
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>SMK Gemas</title> 
